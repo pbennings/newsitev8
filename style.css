@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxrs */
+section {
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+#toggle:checked + .nav {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
