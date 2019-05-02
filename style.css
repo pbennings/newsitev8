@@ -25,8 +25,9 @@ p {
 /* Style the header */
 
 #first-section {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
-  padding: 30px;
   /* position: sticky; */
   top: 0;
  }
@@ -37,8 +38,8 @@ p {
 
 
 /* Container for flexboxrs */
-section {
-  display: flex;
+.container{
+  margin-top: 10px;
 }
 
 /* Style the navigation menu */
@@ -68,9 +69,9 @@ nav {
 
 /* Style the content */
 article {
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
+  /* flex: 3; */
+  background-color: white;
+  padding: 10px 50px 10px 50px;
 }
 
 /* Style the footer */
@@ -232,4 +233,21 @@ footer {
 
 #home-info .info-content p {
   padding-bottom: 30px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+#sub-text {
+  text-align: center;
+}
+
+#white-rectangle {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
 }
